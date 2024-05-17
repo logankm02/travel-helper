@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <script defer src="index.js"></script>
+    <script>
+        window.page2=true
+        window.page1=false;
+    </script>
+    <title>Logan's Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="everything">
+            <div class="city1-search">
+                <input type="search" name="city1-search" placeholder="Enter Source City Name" pattern=".*\S.*" required>
+            </div>
+            <div class="time-search">
+                <input type="time" name="time1-search" placeholder="Enter Time at Source" pattern=".*\S.*" required>
+            </div>
+            <div class="city2-search">
+                <input type="search" name="city2-search" placeholder="Enter Destination City Name" pattern=".*\S.*" required>
+            </div>
+            <div class="GoButton">
+                <button class="go-button"><img src="search.png" alt="Search"></button>
+            </div>
+            <h2 class="final-time">Converted Time</h2>
+            <div class="page-selector">
+                <a class="link" href="index.html">Weather</a>
+                <p>Time Converter</p>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+* {
+    font-family: 'Jost', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.everything {
+    height: auto;
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 60px;
+    z-index: 1;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.search-bar, .city1-search, .city2-search, .time-search {
+    position: relative;
+    width: 60%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    z-index: 2;
+    border-radius: 60px;
+    padding: 9px 20px;
+}
+
+.search-bar input, .city1-search input, .city2-search input, .time-search input {
+    background: transparent;
+    outline: none;
+    border: 0;
+    flex: 1;
+    color: white;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.search-button img, .go-button img {
+    height: 15px;
+    width: 15px
+}
+
+button {
+    display: flex;
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.extra-info .feels-like, .humidity {
+    display: inline-block;
+    padding: 20px;
+}
+
+.link {
+    color: white;
+    padding: 10px;
+}
+
+.link:visitied {
+    color: white;
+}
+
+.GoButton {
+    padding-top: 10px;
+}
+
+.page-selector {
+    display: flex;
+    align-items: center;
+}
+
+.page-selector p {
+    display: inline;
+    padding: 5%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+}
+
+.page-selector a {
+    display: inline;
+    text-decoration: none;
+}
+
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }

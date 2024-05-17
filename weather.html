@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <script defer src="index.js"></script>
+    <script>
+        window.page1=true;
+        window.page2=false;
+        </script>
+    <title>Logan's Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="everything">
+            <div class="search-bar">
+                <input type="search" name="search" placeholder="Enter City Name" pattern=".*\S.*" required>
+                <button class="search-button"><img src="search.png" alt="Search"></button>
+            </div>
+            <div class="info">
+                <h2 class="city">Loading...</h2>
+                <h2 class="temp">Loading...</h2> 
+                <h2 class="weather">Loading...</h2>
+            </div>
+            <div class="extra-info">
+                <div class="feels-like">
+                    <h3>Feels Like</h3>
+                    <p>Loading...<p>
+                </div>
+                <div class="humidity">
+                    <h3>Humidity</h3>
+                    <p>Loading...</p>
+                </div>
+                <div>
+                    <h3>Local Time</h3>
+                    <p class="local-time">Loading...</p>
+                </div>
+            </div>
+            <div class="page-selector">
+                <p>Weather</p>
+                <a class="link" href="timeConvert.html">Time Converter</a>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
