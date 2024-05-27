@@ -51,9 +51,11 @@ async function getWeather(city) {
   await getLatandLong(city);
   const response = await fetch(weatherAPI_URL + "lat=" + latitude + "&lon=" + longitude + `&appid=${API_KEY}` + "&units=metric");
   var data = await response.json();
-  console.log(data);
-  var imageURL = "https://source.unsplash.com/1600x900/?" + city;
-  document.body.style.backgroundImage = "url('" + imageURL + " ')";
+  document.body.style.backgroundImage = "url('travel.jpg')";
+  // console.log(data);
+  // var imageURL = "https://source.unsplash.com/random/1600x900?" + city;
+  // document.body.style.backgroundImage = "url('" + imageURL + "')";
+  // console.log(imageURL);
 
   document.querySelector(".temp").innerHTML = Math.round(data.main.temp, 2) + "°C";
   document.querySelector(".weather").innerHTML = data.weather[0].main;
@@ -141,8 +143,9 @@ async function convertTime(fromCity, time, toCity) {
     DayAfter=false;
   })
 
-  var imageURL = "https://source.unsplash.com/1600x900/?" + toCity;
-  document.body.style.backgroundImage = "url('" + imageURL + " ')";
+  // var imageURL = "https://source.unsplash.com/1600x900/?" + toCity;
+  // document.body.style.backgroundImage = "url('" + imageURL + " ')";
+  document.body.style.backgroundImage = "url('travel.jpg')";
 }
 
 function toggleTemp() {
@@ -151,8 +154,9 @@ function toggleTemp() {
   
 }
 
-var imageURL = "https://source.unsplash.com/1600x900/?London";
-document.body.style.backgroundImage = "url('" + imageURL + " ')";
+// var imageURL = "https://source.unsplash.com/1600x900/?London";
+// document.body.style.backgroundImage = "url('" + imageURL + " ')";
+document.body.style.backgroundImage = "url('travel.jpg')";
 
 if (window.page1==true) {
   getWeather("London");
