@@ -110,7 +110,7 @@ async function convertTime(fromCity, time, toCity) {
 
   var unixTime = Math.floor(constant_date.getTime() / 1000); 
 
-  const response = await fetch(timeConvertAPI_URL + timeAPI_KEY + "&format=json" + "&from=" + fromTimeZone + " &to=" + toTimeZone + "&time=" + unixTime);
+  const response = await fetch(timeConvertAPI_URL + timeAPI_KEY + "&format=json" + "&from=" + fromTimeZone + "&to=" + toTimeZone + "&time=" + unixTime);
   var dataPromise = response.json();
   dataPromise
   .then(data => {
